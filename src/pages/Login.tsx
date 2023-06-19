@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import SignUp from "../components/signup/SignUp";
 
-const Login = () => {
+interface Props {
+	setLogin: () => void;
+}
+
+const Login: React.FC<Props> = (props) => {
 	const [isVisible, setIsVisible] = useState(false);
 
 	const handleClose = () => {
 		setIsVisible(false);
+	};
+
+	const handleLogin = () => {
+		props.setLogin();
 	};
 
 	return (
@@ -36,7 +44,10 @@ const Login = () => {
 							/>
 						</div>
 
-						<button className="h-12 w-full rounded-md bg-trademark-blue text-xl font-bold text-white">
+						<button
+							className="h-12 w-full rounded-md bg-trademark-blue text-xl font-bold text-white"
+							onClick={handleLogin}
+						>
 							Log In
 						</button>
 						<p className="cursor-pointer text-sm text-trademark-blue hover:underline">
