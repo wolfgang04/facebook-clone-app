@@ -4,7 +4,7 @@ import NewsFeed from "../components/Home/NewsFeed";
 
 const Home = () => {
 	return (
-		<div>
+		<div className="h-screen bg-[#18191A]">
 			<Header />
 			<NewsFeed />
 		</div>
