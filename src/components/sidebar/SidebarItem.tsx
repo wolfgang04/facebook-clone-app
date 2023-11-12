@@ -8,7 +8,7 @@ interface Props {
 
 const SidebarItem: React.FC<Props> = ({ itemImg, itemName, children }) => {
 	return (
-		<div className="flex items-center px-2">
+		<div className="flex items-center rounded-md px-2 hover:bg-[#303031] cursor-pointer">
 			<div className="flex h-11 w-14 items-center">
 				{itemImg && (
 					<img

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
+import CreateStory from "./pages/CreateStory";
 
 function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -18,6 +19,7 @@ function App() {
 					isLoggedIn ? <Home /> : <Login setLogin={handleLogin} />
 				}
 			/>
+			<Route path="/stories/create" element={<CreateStory />} />
 		</Routes>
 	);
 }

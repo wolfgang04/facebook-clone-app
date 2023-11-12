@@ -10,6 +10,10 @@ Facebook-clone is an ambitious project with the goal of immersing in a hands-on 
 - ExpressJS as a backend
 - Firebase as a database
 
+## Current State
+
+The UI will be prioritized first before the functionalities or the features so there will be buttons that will not work and dummy data will be used as a mockup to simulate the site.
+
 ## Upcoming Features
 
 - [ ] User Authentication: Sign-up, login, and password recovery mechanisms.

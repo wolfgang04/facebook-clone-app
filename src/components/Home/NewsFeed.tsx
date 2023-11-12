@@ -1,6 +1,7 @@
 import React from "react";
 import Post from "../Post/Post";
 import Sidebar from "../sidebar/Sidebar";
+import Story from "./story/Story";
 
 const NewsFeed = () => {
 	return (
@@ -9,6 +10,7 @@ const NewsFeed = () => {
 				<Sidebar />
 
 				<div className="px-8">
+					<Story />
 					<Post />
 				</div>
 			</div>
