@@ -1,7 +1,15 @@
 import React from "react";
 
-const StoryCard = () => {
-	return <div className="h-[230px] w-32"></div>;
+interface Props {
+	user: string;
+}
+
+const StoryCard: React.FC<Props> = (props) => {
+	return (
+		<div className="h-[250px] w-36 cursor-pointer rounded-lg bg-white p-1">
+			<p>{props.user}</p>
+		</div>
+	);
 };
 
 export default StoryCard;

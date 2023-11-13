@@ -9,7 +9,7 @@ const NewsFeed = () => {
 			<div className="mt-7 flex w-full">
 				<Sidebar />
 
-				<div className="px-8">
+				<div className="max-w-[590px] px-8">
 					<Story />
 					<Post />
 				</div>
