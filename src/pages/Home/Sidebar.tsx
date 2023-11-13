@@ -1,7 +1,7 @@
 import React from "react";
 import PeopleIcon from "@mui/icons-material/People";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
-import SidebarItem from "./SidebarItem";
+import SidebarItem from "../../components/sidebar/SidebarItem";
 
 const Sidebar = () => {
 	const profile = process.env.PUBLIC_URL + "/images/user.png";

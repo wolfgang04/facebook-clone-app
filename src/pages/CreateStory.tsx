@@ -4,8 +4,8 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import { useNavigate } from "react-router";
 import MapsUgcOutlinedIcon from "@mui/icons-material/MapsUgcOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import TextStory from "../components/Home/story/text-story/TextStory";
-import TextStorySideBar from "../components/Home/story/text-story/TextStorySideBar";
+import TextStory from "../components/story/text-story/TextStory";
+import TextStorySideBar from "../components/story/text-story/TextStorySideBar";
 
 const CreateStory = () => {
 	const [createText, setCreateText] = useState<boolean>(false);
