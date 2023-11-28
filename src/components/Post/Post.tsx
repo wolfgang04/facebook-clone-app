@@ -19,7 +19,7 @@ const Post = () => {
 				<CreatePost onClose={handleClosePostForm} />
 			)}
 
-			<div className="w-[590px] rounded-lg bg-[#242526] p-5 pb-1">
+			<div className="w-full rounded-lg bg-[#242526] p-5 pb-1">
 				<div className="flex gap-2 pb-3">
 					<img
 						alt=""

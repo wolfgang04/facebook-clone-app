@@ -1,14 +1,27 @@
 import React from "react";
+import { useNavigate, useParams } from "react-router";
 
 interface Props {
 	itemImg?: string;
 	itemName: string;
 	children?: React.ReactElement;
+	id: string;
 }
 
-const SidebarItem: React.FC<Props> = ({ itemImg, itemName, children }) => {
+const SidebarItem: React.FC<Props> = ({ itemImg, itemName, children, id }) => {
+	const navigate = useNavigate();
+	const { username } = useParams();
+
+	const handleClick = () => {
+		navigate(`/${id}`);
+		console.log(username);
+	};
+
 	return (
-		<div className="flex items-center rounded-md px-2 hover:bg-[#303031] cursor-pointer">
+		<div
+			className="flex cursor-pointer items-center rounded-md px-2 py-1 hover:bg-[#303031]"
+			onClick={handleClick}
+		>
 			<div className="flex h-11 w-14 items-center">
 				{itemImg && (
 					<img

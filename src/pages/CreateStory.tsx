@@ -24,7 +24,6 @@ const CreateStory = () => {
 
 	const handleTextChange = (text: string) => {
 		setText(text);
-		console.log(text);
 	};
 
 	const handleDiscardText = () => {
@@ -37,7 +36,7 @@ const CreateStory = () => {
 			<div className="h-full w-1/3 max-w-[360px] bg-[#242526] px-3">
 				<div className="flex items-center gap-2 py-[10px] shadow-md">
 					<div
-						className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#161617]"
+						className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#161617] hover:bg-[#2D2E2E]"
 						onClick={() => navigate(-1)}
 					>
 						<CloseIcon style={{ color: "white" }} />
@@ -61,7 +60,7 @@ const CreateStory = () => {
 						<img
 							src={profile}
 							alt=""
-							className="h-15 w-15 rounded-full"
+							className="h-14 w-auto rounded-full"
 						/>
 						<p className="font-bold text-white">
 							Carl Andrew Linao

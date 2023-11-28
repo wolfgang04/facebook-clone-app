@@ -22,7 +22,6 @@ const CreatePost: React.FC<Props> = (props) => {
 
 	const handleEnablePostButton = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setInputText(e.target.value);
-		console.log(inputText);
 	};
 
 	return (
@@ -32,7 +31,7 @@ const CreatePost: React.FC<Props> = (props) => {
 				onClick={props.onClose}
 			/>
 
-			<div className="fixed z-50 w-[500px] rounded-md bg-[#242526]">
+			<div className="absolute z-50 w-[500px] rounded-md bg-[#242526]">
 				<div className="flex h-[60px] items-center justify-center border-b-[1px] border-[#3E4042]">
 					<p className="text-xl font-bold text-white">Create Post</p>
 				</div>
