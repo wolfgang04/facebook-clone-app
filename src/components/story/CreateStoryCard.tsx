@@ -1,6 +1,5 @@
 import AddIcon from "@mui/icons-material/Add";
 import { useNavigate } from "react-router";
-import React from "react";
 
 const CreateStoryCard = () => {
 	const profile = window.location.origin + "/images/user.png";
@@ -13,7 +12,7 @@ const CreateStoryCard = () => {
 
 	return (
 		<div
-			className="relative h-[250px] w-36 cursor-pointer rounded-lg bg-white hover:opacity-80"
+			className="relative h-[250px] shrink-0 w-36 cursor-pointer rounded-lg bg-white hover:opacity-80"
 			onClick={handleCreateStory}
 		>
 			<img

@@ -1,4 +1,3 @@
-import React from "react";
 import Post from "../../Post/Post";
 import Bio from "../Bio";
 import Photos from "../Photos";

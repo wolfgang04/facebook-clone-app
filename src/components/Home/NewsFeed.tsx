@@ -1,4 +1,3 @@
-import React from "react";
 import Post from "../Post/Post";
 import Sidebar from "./Sidebar";
 import Story from "../story/Story";

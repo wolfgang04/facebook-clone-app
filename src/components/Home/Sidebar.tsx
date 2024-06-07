@@ -1,4 +1,3 @@
-import React from "react";
 import PeopleIcon from "@mui/icons-material/People";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import SidebarItem from "../sidebar/SidebarItem";

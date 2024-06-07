@@ -42,7 +42,9 @@ const CreateStory = () => {
 						<CloseIcon style={{ color: "white" }} />
 					</div>
 
-					<img src={logo} alt="fb-logo" />
+					<button onClick={() => navigate("/")}>
+						<img src={logo} alt="fb-logo" />
+					</button>
 				</div>
 
 				<div className="flex flex-col border-b-[1px] border-b-[#2F3031] pt-5">
@@ -129,7 +131,7 @@ const CreateStory = () => {
 							>
 								<div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#242526]">
 									<img
-										src={image}
+										src={Aa}
 										alt="img"
 										className="h-6 w-6"
 									/>
