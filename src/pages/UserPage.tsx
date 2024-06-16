@@ -39,9 +39,7 @@ const UserPage = () => {
 
 						<div className="flex w-full -translate-y-1/3 items-end justify-between">
 							<div>
-								<p className="text-3xl font-bold">
-									Carl Andrew Linao
-								</p>
+								<p className="text-3xl font-bold">John Doe</p>
 								<p className="pt-1 font-semibold text-[#A2B3B8]">
 									69 friends
 								</p>

@@ -64,9 +64,7 @@ const CreateStory = () => {
 							alt=""
 							className="h-14 w-auto rounded-full"
 						/>
-						<p className="font-bold text-white">
-							Carl Andrew Linao
-						</p>
+						<p className="font-bold text-white">John Doe</p>
 					</div>
 				</div>
 

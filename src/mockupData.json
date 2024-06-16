@@ -1,0 +1,38 @@
+[
+  {
+    "postID": 1,
+    "user": "Tiburcio Decidido",
+    "caption": "Test post 1",
+    "photos": [],
+    "comments": []
+  },
+  {
+    "postID": 2,
+    "user": "Tiburcio Decidido",
+    "caption": "Test post 2 with image",
+    "photos": [
+      "../images/sample-bgImage.png"
+    ],
+    "comments": []
+  },
+  {
+    "postID": 3,
+    "user": "Tiburcio Decidido",
+    "caption": "Test post 3 with comments",
+    "photos": [],
+    "comments": [
+      {
+        "user": "John Doe",
+        "comment": "Test Comment"
+      },
+      {
+        "user": "Jane Doe",
+        "comment": "another comment"
+      },
+      {
+        "user": "Elliot Alderson",
+        "comment": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis blanditiis ducimus molestias quos quo perspiciatis ad rem accusantium voluptatum. Porro, suscipit atque. Sunt minima eos magnam sed, eius cupiditate."
+      }
+    ]
+  }
+]

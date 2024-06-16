@@ -1,7 +1,8 @@
-import Post from "../Post/Post";
+import CreatePost from "../Post/Post";
 import Sidebar from "./Sidebar";
 import Story from "../story/Story";
 import Contacts from "./Contacts";
+import Posts from "../Posts/Posts";
 
 const NewsFeed = () => {
 	return (
@@ -11,7 +12,9 @@ const NewsFeed = () => {
 
 				<div className="max-w-[590px]">
 					<Story />
-					<Post />
+					<CreatePost />
+
+					<Posts />
 				</div>
 
 				<Contacts />

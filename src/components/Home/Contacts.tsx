@@ -1,7 +1,7 @@
-import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Contact from "./contacts/Contact";
+import { storyImages as users } from "../story/Story";
 
 const Contacts = () => {
 	return (
@@ -16,10 +16,13 @@ const Contacts = () => {
 			</div>
 
 			<div className="flex flex-col">
-				<Contact name="Benedict Avenido" />
-				<Contact name="Jade Bayot Boang" />
-				<Contact name="Tyler De Leon" />
-				<Contact name="Jake Anunciado" />
+				{users.map((user) => (
+					<Contact
+						name={user.user}
+						profile={user.profile}
+						key={user.user}
+					/>
+				))}
 			</div>
 		</div>
 	);

@@ -11,22 +11,22 @@ interface story {
 export const storyImages: story[] = [
 	{
 		user: "Mark Zuckerberg",
-		profile: window.location.origin + "/images/story/zucc.jpg",
+		profile: window.location.origin + "/images/users/zucc.jpg",
 		storyImage: [window.location.origin + "/images/story/zuccbeard.png"],
 	},
 	{
 		user: "Barack Obama",
-		profile: window.location.origin + "/images/story/obama.webp",
+		profile: window.location.origin + "/images/users/obama.webp",
 		storyImage: [window.location.origin + "/images/story/obama.jpg"],
 	},
 	{
 		user: "Kdot",
-		profile: window.location.origin + "/images/story/kdot.jpg",
+		profile: window.location.origin + "/images/users/kdot.jpg",
 		storyImage: [window.location.origin + "/images/story/pimp.avif"],
 	},
 	{
 		user: "Bayot Boang",
-		profile: window.location.origin + "/images/story/spiderbai.png",
+		profile: window.location.origin + "/images/users/spiderbai.png",
 		storyImage: [window.location.origin + "/images/story/bayotboang.jpg"],
 	},
 ];
