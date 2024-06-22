@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import EmojiEmotionsOutlinedIcon from "@mui/icons-material/EmojiEmotionsOutlined";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import PersonIcon from "@mui/icons-material/Person";
 import PublicIcon from "@mui/icons-material/Public";
-import FlagIcon from "@mui/icons-material/Flag";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import PostAttachments from "./PostAttachments";
 
 interface Props {
 	onClose: () => void;
@@ -15,7 +11,6 @@ const CreatePost: React.FC<Props> = (props) => {
 	const [inputText, setInputText] = useState("");
 
 	const profile = window.location.origin + "/images/user.png";
-	const image = window.location.origin + "/images/image.png";
 
 	const buttonDiabledStyle =
 		"disabled:bg-[#505151] disabled:cursor-not-allowed";
@@ -79,58 +74,7 @@ const CreatePost: React.FC<Props> = (props) => {
 							</p>
 
 							<div className="flex items-center justify-center">
-								<div className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full hover:bg-[#3A3B3C]">
-									<img
-										src={image}
-										alt=""
-										className="h-8 w-8"
-									/>
-								</div>
-								<div className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full hover:bg-[#3A3B3C]">
-									<PersonIcon
-										style={{
-											color: "#2374E1",
-											height: "32px",
-											width: "32px",
-										}}
-									/>
-								</div>
-								<div className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full hover:bg-[#3A3B3C]">
-									<EmojiEmotionsOutlinedIcon
-										style={{
-											color: "#F7B928",
-											height: "32px",
-											width: "32px",
-										}}
-									/>
-								</div>
-								<div className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full hover:bg-[#3A3B3C]">
-									<LocationOnIcon
-										style={{
-											color: "red",
-											height: "32px",
-											width: "32px",
-										}}
-									/>
-								</div>
-								<div className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full hover:bg-[#3A3B3C]">
-									<FlagIcon
-										style={{
-											color: "#0399E1",
-											height: "32px",
-											width: "32px",
-										}}
-									/>
-								</div>
-								<div className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full hover:bg-[#3A3B3C]">
-									<MoreHorizIcon
-										style={{
-											color: "#606770",
-											height: "32px",
-											width: "32px",
-										}}
-									/>
-								</div>
+								<PostAttachments />
 							</div>
 						</div>
 
