@@ -31,7 +31,7 @@ const CreatePost: React.FC<Props> = (props) => {
 				onClick={props.onClose}
 			/>
 
-			<div className="absolute z-50 w-[500px] rounded-md bg-[#242526]">
+			<div className="fixed z-50 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[500px] rounded-md bg-[#242526]">
 				<div className="flex h-[60px] items-center justify-center border-b-[1px] border-[#3E4042]">
 					<p className="text-xl font-bold text-white">Create Post</p>
 				</div>
